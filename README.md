@@ -1,1 +1,1 @@
-# Prosta rejestracja z logowaniem
+# Projekt zaliczeniowy
