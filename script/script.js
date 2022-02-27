@@ -1,0 +1,51 @@
+// toggle drop down menu
+const toggleButton = document.getElementsByClassName("toggle-button")[0]
+const navbarLinks = document.getElementsByClassName("navbar-links")[0]
+
+toggleButton.addEventListener("click", (event) => {
+    navbarLinks.classList.toggle("active")
+    event.stopPropagation()
+})
+
+// hide drop down menu
+const bd = document.getElementsByTagName("body")[0]
+
+bd.addEventListener("click", () => {
+    navbarLinks.classList.remove("active")
+}) 
+
+// --------------------------
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
