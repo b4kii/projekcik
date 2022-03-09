@@ -1,5 +1,8 @@
 
     <footer class="footer">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
         <p>&copy; 2021</p>
     </footer>
 

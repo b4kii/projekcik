@@ -4,6 +4,9 @@ const ctx = canvas.getContext("2d");
 canvas.width = 800;
 canvas.height = 600;
 
+ctx.fillStyle = "white";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 let painting = false;
 
 function startPosition(e) {
@@ -19,28 +22,56 @@ function finishedPosition() {
 }
 
 function erase() {
-    ctx.globalCompositeOperation = 'destination-out';
+    ctx.strokeStyle = "White";
+    draw();
+}
+
+let col = "black";
+
+function changeColor(color) {
+    col = color;
+    pen();
+}
+
+function pen() {
+    ctx.globalCompositeOperation = "source-over";
+    ctx.strokeStyle = col;
+    draw();
+}
+
+function fillCanvas() {
+    ctx.fillStyle = col;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+const buttons = document.getElementsByClassName("highlight");
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function () {
+        let temp = document.getElementsByClassName("btnActive");
+        temp[0].className = temp[0].className.replace(" btnActive", "");
+        this.className += " btnActive";
+    });
 }
 
 function reset() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-function pen() {
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.strokeStyle = 'Black';
-    draw(e);
+function downloadImg(el) {
+    let image = canvas.toDataURL("image/jpg");
+    el.href = image;
 }
 
-function changeColor(color) {
-    ctx.strokeStyle = color;
-    ctx.globalCompositeOperation = 'source-over';
-    draw(e);
+ctx.lineWidth = 2;
+function changeWidth(value) {
+    ctx.lineWidth = value;
 }
 
 function draw(e) {
     if(!painting) return;
-    ctx.lineWidth = 10;
     ctx.lineCap = "round";
 
     let rect = canvas.getBoundingClientRect();
@@ -56,3 +87,13 @@ function draw(e) {
 canvas.addEventListener("mousedown", startPosition);
 canvas.addEventListener("mouseup", finishedPosition);
 canvas.addEventListener("mousemove", draw);
+
+function test() {
+    if (canvas.className == "on") {
+        canvas.className = "off";
+        animation.className = "on";
+    } else {
+        canvas.className = "on";
+        animation.className = "off";
+    }
+}

@@ -1,7 +1,5 @@
 <?php 
 
-// TODO: error handlings
-
 function userExists($conn, $username, $email) {
     $sql = "SELECT * FROM users WHERE userLogin = ? OR userEmail = ?;";
     $stmt = mysqli_stmt_init($conn);

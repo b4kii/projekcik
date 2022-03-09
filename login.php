@@ -8,7 +8,7 @@
             </div>
             <form id="lform" class="sform" action="includes/login_inc.php" method="post">
                 <div class="form-control">
-                    <label for="username">Nazwa użytkownika</label><br>
+                    <label for="lusername">Nazwa użytkownika</label><br>
                     <input type="text" id="lusername" name="username" placeholder="Twoja nazwa" required>
                     <small></small>
                     <?php 
@@ -39,7 +39,7 @@
                     ?>
                 </div>
                 <div class="form-control">
-                    <label for="passwd">Hasło</label><br>
+                    <label for="lpasswd">Hasło</label><br>
                     <input type="password" id="lpasswd" name="passwd" placeholder="Twoje hasło" required>
                     <small></small>
                     <?php

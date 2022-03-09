@@ -54,11 +54,6 @@
         </form>
         </div>
     </section>
-
-        <article>
-                ala ma kota
-        </article>
-
 <?php 
     include_once "footer.php"
 ?>
