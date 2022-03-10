@@ -7,34 +7,33 @@
         <!-- Gallery -->
         <div class="container">
             <div class="mySlides">
-                <img src="img/1.jpg" style="width:100%;">
+                <img src="img/1.jpg" alt="1" style="width:100%;">
             </div>
 
             <div class="mySlides">
-                <img src="img/2.jpg" style="width:100%;">
+                <img src="img/2.jpg" alt="2" style="width:100%;">
             </div>
 
             <div class="mySlides">
-                <img src="img/3.jpg" style="width:100%;">
+                <img src="img/3.jpg" alt="3" style="width:100%;">
             </div>
                 
             <div class="mySlides">
-                <img src="img/4.jpg" style="width:100%;">
+                <img src="img/4.jpg" alt="4" style="width:100%;">
             </div>
 
             <div class="mySlides">
-                <img src="img/5.jpg" style="width:100%;">
+                <img src="img/5.jpg" alt="5" style="width:100%;">
             </div>
                 
             <div class="mySlides">
-                <img src="img/6.jpg" style="width:100%;">
+                <img src="img/6.jpg" alt="6" style="width:100%;">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
 
             <div class="caption-container">
-                <p id="caption"></p>
             </div>
 
             <div class="row">
@@ -59,7 +58,6 @@
             </div>
 
             <div class="caption-container">
-                <p id="caption"></p>
             </div>
 
         </div>

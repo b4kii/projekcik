@@ -34,9 +34,6 @@ $result = $statement->fetchAll();
 $output = '';
 
 foreach ($result as $row) {
-    // $output .= '
-    // <div class="list-element">'.$row['val'].'</div>
-    // ';
     $output .= '
     <tr id="tr_'.$row['listId'].'">
         <td class="check">

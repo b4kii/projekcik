@@ -4,6 +4,7 @@
 ?>
 
 <section class="can">
+    <h2 style="color: black;">CANVAS</h2>
 
     <div class="buttons">
         <button onclick="pen()" class="bin highlight btnActive">
@@ -29,16 +30,17 @@
     <canvas id="canvas" class="on" style="border: 1px solid black;"></canvas>
     <canvas id="animation" class="off" style="border: 1px solid black;"></canvas>
 
-    <a href="" id="download" download="canvas.jpg" onclick="downloadImg(this)">
-        <button class="bin">
+    <div class="down">
+        <a href="" id="download" download="canvas.jpg" onclick="downloadImg(this)">
             <i class="material-icons">file_download</i>
-        </button>
-    </a>
+        </a>
+    </div>
 
 </section>
 
 <section class="todo">
     <div class="wrap">
+        <h2>TODO LIST</h2>
         <form method="post" id="todo-list">
             <input type="text" name="text" id="text" class="text" placeholder="Task" required>
             <div class="xd">
@@ -46,6 +48,7 @@
             </div>
         </form>
             <button name="delete" id="delete" class="tb">DEL</button>
+
         <table id="display-list" class="dis">
 
         </table>
