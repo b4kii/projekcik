@@ -20,7 +20,7 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
 
-    <title>Test</title>
+    <title>Projekt</title>
 </head>
 <body>
     <!-- Bar menu --> 
