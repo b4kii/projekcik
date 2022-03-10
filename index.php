@@ -83,20 +83,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>ala ma kota</td>
-                        <td>a kot ma ale</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>10</td>
                     </tr>
                     <tr>
-                        <td>razem pija</td>
-                        <td>i topia zale</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>20</td>
                     </tr>
                     <tr>
-                        <td>123</td>
-                        <td>456</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>30</td>
                     </tr>
                     <tr>
-                        <td>7890</td>
-                        <td>123</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing.</td>
+                        <td>40</td>
                     </tr>
                 </tbody>
             </table>

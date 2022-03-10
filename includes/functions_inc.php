@@ -54,6 +54,7 @@ function loginUser($conn, $username, $passwd) {
     } else if($passwdCheck === true) {
         session_start();
         $_SESSION["userid"] = $ifexists["userId"];
+        $_SESSION["userName"] = $ifexists["userLogin"];
         header("location: ../logged.php");
         exit();
     }

@@ -50,3 +50,8 @@
             </ul>
         </div>
     </nav>
+        <?php
+            if (isset($_SESSION["userName"])) {
+                echo "<div class='user-name'><h2>Witaj ".$_SESSION["userName"]."!</h2></div>";
+            }
+        ?>

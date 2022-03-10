@@ -12,13 +12,14 @@
 }
 
 body::-webkit-scrollbar {
-    width: .50rem;
+    width: .75rem;
     background: var(--blue);
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var(--sbt);
+    background: var(--green);
     height: 5px;
+    border: 1px solid var(--blue);
 }
 
 body {
@@ -95,6 +96,14 @@ body {
     text-decoration: none;
 }
 
+.user-name {
+    color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main {
     min-height: 88vh;
     margin: auto;
@@ -118,6 +127,10 @@ body {
 
 .mySlides {
     display: none;
+}
+
+.mySlides > img {
+    margin-top: 10px;
 }
 
 .cursor {
@@ -577,6 +590,7 @@ footer .fa {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .tb:hover {
