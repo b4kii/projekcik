@@ -5,7 +5,7 @@ session_start();
 
 $uid = $_SESSION['userid'];
 
-$connection = new PDO('mysql:host=localhost;dbname=logowanie', 'root', '');
+$connection = new PDO('mysql:host=localhost;dbname=damian.halibart', 'damian.halibart', '12345678');
 
 $sql = "SELECT * FROM users JOIN lists WHERE users.userId = lists.userId AND lists.userId = '$uid' ORDER BY lists.listId DESC;";
 

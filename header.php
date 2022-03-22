@@ -26,7 +26,7 @@
     <!-- Bar menu --> 
     <nav class="navbar">
         <div class="logo"> 
-            <a href="index.php"><img src="img/mapa.png" alt="test" width="50" height="25"></a>
+            <a href="index.php">DH</a>
         </div>
         <a class="toggle-button">
             <span class="bar"></span>
@@ -35,12 +35,14 @@
         </a>
         <div class="navbar-links">
             <ul>
+		
                 <li><a href="index.php#about">O mnie</a></li>
-                <li><a href="index.php#price-list">Cennik</a></li>
+            
                 <li><a href="index.php#contact">Kontakt</a></li>
                 <?php
                     if(isset($_SESSION["userid"])) {
                         echo "<li><a href='logged.php'>Canvas</a></li>";
+			echo "<li><a href='logged.php#todo'>Lista</a></li>";
                         echo "<li><a href='includes/logout_inc.php'>Wyloguj się</a></li>";
                     } else {
                         echo "<li><a href='signup.php'>Zarejestruj się</a></li>";
@@ -50,8 +52,4 @@
             </ul>
         </div>
     </nav>
-        <?php
-            if (isset($_SESSION["userName"])) {
-                echo "<div class='user-name'><h2>Witaj ".$_SESSION["userName"]."!</h2></div>";
-            }
-        ?>
+        

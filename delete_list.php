@@ -1,6 +1,6 @@
 <?php
 
-$connection = new PDO('mysql:host=localhost;dbname=logowanie', 'root', '');
+$connection = new PDO('mysql:host=localhost;dbname=damian.halibart', 'damian.halibart', '12345678');
 
 $checked_ids = $_POST['check_id'];
 

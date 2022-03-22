@@ -1,8 +1,8 @@
 
     <footer class="footer">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-youtube"></a>
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
         <p>&copy; 2021</p>
     </footer>
 

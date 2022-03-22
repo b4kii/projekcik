@@ -1,7 +1,16 @@
 <?php
     include_once "header.php";
+    include_once "header.php";
+    if (!isset($_SESSION["userid"])) {
+        header("location: index.php");
+    }
 ?>
 
+<?php
+            if (isset($_SESSION["userName"])) {
+                echo "<div class='user-name'><h2>Witaj ".$_SESSION["userName"]."!</h2></div>";
+            }
+        ?>
 <section class="can">
     <h2 style="color: black;">CANVAS</h2>
 
@@ -37,7 +46,7 @@
 
 </section>
 
-<section class="todo">
+<section class="todo" id="todo">
     <div class="wrap">
         <h2>TODO LIST</h2>
         <form method="post" id="todo-list">
