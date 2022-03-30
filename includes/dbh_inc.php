@@ -5,6 +5,7 @@ $dbUsername = "damian.halibart";
 $dbPassword = "12345678";
 $dbName = "damian.halibart";
 
+
 $conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);
 
 // $query1 = "CREATE TABLE users (
